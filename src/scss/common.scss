@@ -1,0 +1,53 @@
+.page-content {
+    position: relative;
+    padding-left: 256px;
+}
+.ui-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 1px 6px rgba(0,0,0,.117647), 0 1px 4px rgba(0,0,0,.117647);
+}
+.ui-empty {
+    padding-top: 160px;
+    text-align: center;
+    .ui-empty-icon {
+        display: inline-block;
+        margin-bottom: 24px;
+    }
+    .ui-empty-text {
+        color: $color_9;
+    }
+}
+
+.ui-file-button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+// 图床
+.type-tab {
+    max-width: 700px;
+    margin-bottom: 16px;
+    background-color: #fff;
+    border-bottom: 1px solid $divider;
+    .mu-tab-text {
+        color: #333;
+    }
+}
+.my-tab {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.tab-box {
+    code {
+        padding: 16px;
+    }
+}
