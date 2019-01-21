@@ -1,5 +1,5 @@
 <template>
-    <my-page title="文件" :page="page">
+    <my-page title="PDF" :page="page">
         <app-list :data="groups" />
     </my-page>
 </template>
@@ -11,26 +11,14 @@
             return {
                 groups: [
                     {
-                        name: '基本',
+                        // name: '基本',
                         apps: [
                             {
-                                name: '临时网盘',
+                                name: 'PDF 加密',
                                 desc: '',
                                 icon: '/static/img/file.svg',
-                                to: '/temp'
-                            },
-                            {
-                                name: '图床',
-                                desc: '',
-                                icon: '/static/img/file.svg',
-                                to: '/image/temp'
-                            },
-                            {
-                                name: '文件查看',
-                                desc: '',
-                                icon: '/static/img/file.svg',
-                                to: '/viewer'
-                            },
+                                to: '/encrypt'
+                            }
                         ]
                     },
                     // {
@@ -56,14 +44,14 @@
                         {
                             type: 'icon',
                             icon: 'search',
-                            href: 'https://search.yunser.com?utm_source=converter',
+                            href: 'https://search.yunser.com?utm_source=pdf',
                             target: '_blank',
                             title: '搜索'
                         },
                         {
                             type: 'icon',
                             icon: 'apps',
-                            href: 'https://app.yunser.com?utm_source=converter',
+                            href: 'https://app.yunser.com?utm_source=pdf',
                             target: '_blank',
                             title: '应用'
                         }

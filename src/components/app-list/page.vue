@@ -11,7 +11,7 @@
                             <h3 class="text">{{ app.name }}</h3>
                             <div class="desc">{{ app.desc }}</div>
                         </div>
-                        <i class="icon icon-heart"></i>
+                        <!-- <i class="icon icon-heart"></i> -->
                     </router-link>
                 </div>
             </div>
@@ -69,9 +69,9 @@
     .list-item {
         position: relative;
         float: left;
+        z-index: 1;
         width: 260px;
         height: 96px;
-        padding: 8px;
         margin: 2px 16px 16px 2px;
         background-color: #fff;
         cursor: pointer;
@@ -84,8 +84,15 @@
                 display: block;
             }
         }
-        &.active {
-            border: 1px solid #f00;
+        &:active {
+            // border: 1px solid #f00;
+        }
+        .link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 8px;
+            cursor: pointer;
         }
     }
     a {
@@ -98,8 +105,7 @@
         width: 72px;
         height: 72px;
         margin-right: 16px;
-        background-color: #fff;
-        border: 1px solid #e9e9e9;
+        // border: 1px solid #e9e9e9;
         border-radius: 8px;
     }
     .info {
